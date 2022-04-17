@@ -1,0 +1,320 @@
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Author: Jaume Nadal Salom" .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Onthology for the TV Series Fringe\n\nThe series is about the Fringe division of the FBI, division in charge of supernatural cases." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor who appears in episode" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Season the episode belongs to" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.w3.org/2000/01/rdf-schema#comment> "Song that was composed by the composer" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Composer that composed the musical piece" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor who won the award" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor who was nominated" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Writter who wrote the episode" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode that was written by the writer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the episode in the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the song" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that englobes all actors who participated in the TV series" .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Actor" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the Awards the TV series has received" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the books about the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the comics associated to the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> <http://www.w3.org/2000/01/rdf-schema#comment> "Class which contains information about the composers of the TV series music and sound effects." .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Composer" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that provides information about the country of origin of the TV Series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the information about the episodes of the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that contains information about episode directors" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that contains information about episode writters" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the films associated to the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the games associated to the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that contains the genres of the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Class containing spatial information about the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for main actors of the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that represents the nominations the TV series has earned." .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the executive producers of the TV series." .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/producer" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to describe the production locations ot the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "Class which contains related media to the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the information about the seasons of the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor> <http://www.w3.org/2000/01/rdf-schema#comment> "Class for the SecondaryActors of the Series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> <http://www.w3.org/2000/01/rdf-schema#sameAs> "Class for the songs of the TV series" .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass that contains the different kind of profiles that are involved in the TV series." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AlexGraves
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AlexGraves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AlexGraves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestActress> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AryGraynor
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AryGraynor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AryGraynor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AryGraynor> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestSupportingActor> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestActress
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestActress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestActress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestSupportingActor
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestSupportingActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestSupportingActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EEUU
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EEUU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EEUU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle> "Intro"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JJAbrams
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JJAbrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JJAbrams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JoshuaJackson
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JoshuaJackson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JoshuaJackson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MichaelGiacchino
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MichaelGiacchino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MichaelGiacchino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MichaelGiacchino> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RobertoOrci
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RobertoOrci> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RobertoOrci> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SienceFiction
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SienceFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SienceFiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Toronto
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Toronto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Toronto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#season1> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#season1
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
