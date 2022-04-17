@@ -1,0 +1,123 @@
+{
+  "@context" : {
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "composed" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed",
+      "@type" : "@id"
+    },
+    "writtenBy" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy",
+      "@type" : "@id"
+    },
+    "CountryOfOrigin" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin"
+    },
+    "belongsToSeason" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason",
+      "@type" : "@id"
+    },
+    "RelatedMedia" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia"
+    },
+    "appearsInEpisode" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode"
+    },
+    "Composer" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer"
+    },
+    "wasNominatedTo" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo",
+      "@type" : "@id"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor"
+    },
+    "Book" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book"
+    },
+    "SecondaryActor" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "EpisodeWritter" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter"
+    },
+    "Nomination" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination"
+    },
+    "wrote" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote",
+      "@type" : "@id"
+    },
+    "songTitle" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "wasAdwarded" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded",
+      "@type" : "@id"
+    },
+    "Staff" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff"
+    },
+    "ProductionLocation" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation"
+    },
+    "Film" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film"
+    },
+    "EpisodeDirector" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector"
+    },
+    "MainActor" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor"
+    },
+    "Game" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game"
+    },
+    "Comic" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre"
+    },
+    "Song" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song"
+    },
+    "episodeNumber" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season"
+    },
+    "composedBy" : {
+      "@id" : "http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy",
+      "@type" : "@id"
+    }
+  }
+}

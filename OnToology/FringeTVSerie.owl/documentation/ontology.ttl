@@ -1,0 +1,343 @@
+@prefix : <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#> .
+
+<http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries> rdf:type owl:Ontology ;
+                                                                     rdfs:comment "Author: Jaume Nadal Salom" ,
+                                                                                  """Onthology for the TV Series Fringe
+
+The series is about the Fringe division of the FBI, division in charge of supernatural cases.""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#appearsInEpisode
+:appearsInEpisode rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :Actor ;
+                  rdfs:range :Episode ;
+                  rdfs:comment "Actor who appears in episode" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#belongsToSeason
+:belongsToSeason rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Season ;
+                 rdfs:range :Episode ;
+                 rdfs:comment "Season the episode belongs to" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composed
+:composed rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          owl:inverseOf :composedBy ;
+          rdfs:domain :Composer ;
+          rdfs:range :Song ;
+          rdfs:comment "Song that was composed by the composer" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#composedBy
+:composedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Song ;
+            rdfs:range :Composer ;
+            rdfs:comment "Composer that composed the musical piece" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasAdwarded
+:wasAdwarded rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Award ;
+             rdfs:range :Actor ;
+             rdfs:comment "Actor who won the award" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wasNominatedTo
+:wasNominatedTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Actor ;
+                rdfs:range :Nomination ;
+                rdfs:comment "Actor who was nominated" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf :wrote ;
+           rdfs:domain :Episode ;
+           rdfs:range :EpisodeWritter ;
+           rdfs:comment "Writter who wrote the episode" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#wrote
+:wrote rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain :EpisodeWritter ;
+       rdfs:range :Episode ;
+       rdfs:comment "Episode that was written by the writer" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episodeNumber
+:episodeNumber rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Episode ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "Number of the episode in the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#songTitle
+:songTitle rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Song ;
+           rdfs:range rdfs:Literal ;
+           rdfs:comment "Title of the song" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Staff ;
+       rdfs:comment "Class that englobes all actors who participated in the TV series" ;
+       rdfs:sameAs "https://dbpedia.org/page/Actor" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Award
+:Award rdf:type owl:Class ;
+       rdfs:comment "Class for the Awards the TV series has received" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Book
+:Book rdf:type owl:Class ;
+      rdfs:subClassOf :RelatedMedia ;
+      rdfs:comment "Class for the books about the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Comic
+:Comic rdf:type owl:Class ;
+       rdfs:subClassOf :RelatedMedia ;
+       rdfs:comment "Class for the comics associated to the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Composer
+:Composer rdf:type owl:Class ;
+          rdfs:subClassOf :Staff ;
+          rdfs:comment "Class which contains information about the composers of the TV series music and sound effects." ;
+          rdfs:sameAs "https://dbpedia.org/page/Composer" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#CountryOfOrigin
+:CountryOfOrigin rdf:type owl:Class ;
+                 rdfs:subClassOf :Location ;
+                 rdfs:comment "Class that provides information about the country of origin of the TV Series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "Class for the information about the episodes of the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeDirector
+:EpisodeDirector rdf:type owl:Class ;
+                 rdfs:subClassOf :Staff ;
+                 rdfs:comment "Class that contains information about episode directors" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EpisodeWritter
+:EpisodeWritter rdf:type owl:Class ;
+                rdfs:subClassOf :Staff ;
+                rdfs:comment "Class that contains information about episode writters" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Film
+:Film rdf:type owl:Class ;
+      rdfs:subClassOf :RelatedMedia ;
+      rdfs:comment "Class for the films associated to the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Game
+:Game rdf:type owl:Class ;
+      rdfs:subClassOf :RelatedMedia ;
+      rdfs:comment "Class for the games associated to the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "Class that contains the genres of the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Class containing spatial information about the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MainActor
+:MainActor rdf:type owl:Class ;
+           rdfs:subClassOf :Actor ;
+           owl:disjointWith :SecondaryActor ;
+           rdfs:comment "Class for main actors of the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Nomination
+:Nomination rdf:type owl:Class ;
+            rdfs:comment "Class that represents the nominations the TV series has earned." .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Staff ;
+          rdfs:comment "Class for the executive producers of the TV series." ;
+          rdfs:sameAs "https://dbpedia.org/ontology/producer" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#ProductionLocation
+:ProductionLocation rdf:type owl:Class ;
+                    rdfs:subClassOf :Location ;
+                    rdfs:comment "Class to describe the production locations ot the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RelatedMedia
+:RelatedMedia rdf:type owl:Class ;
+              rdfs:comment "Class which contains related media to the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "Class for the information about the seasons of the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SecondaryActor
+:SecondaryActor rdf:type owl:Class ;
+                rdfs:subClassOf :Actor ;
+                rdfs:comment "Class for the SecondaryActors of the Series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Song
+:Song rdf:type owl:Class ;
+      rdfs:sameAs "Class for the songs of the TV series" .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Staff
+:Staff rdf:type owl:Class ;
+       rdfs:comment "Superclass that contains the different kind of profiles that are involved in the TV series." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AlexGraves
+:AlexGraves rdf:type owl:NamedIndividual ,
+                     :EpisodeDirector .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AnnaTorv
+:AnnaTorv rdf:type owl:NamedIndividual ,
+                   :MainActor ;
+          :appearsInEpisode :episode1 ;
+          :wasNominatedTo :BestActress .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#AryGraynor
+:AryGraynor rdf:type owl:NamedIndividual ,
+                     :SecondaryActor ;
+            :wasAdwarded :BestSupportingActor .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestActress
+:BestActress rdf:type owl:NamedIndividual ,
+                      :Nomination .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#BestSupportingActor
+:BestSupportingActor rdf:type owl:NamedIndividual ,
+                              :Award .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#EEUU
+:EEUU rdf:type owl:NamedIndividual ,
+               :CountryOfOrigin .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#IntroSeason1
+:IntroSeason1 rdf:type owl:NamedIndividual ,
+                       :Song ;
+              :songTitle "Intro"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JJAbrams
+:JJAbrams rdf:type owl:NamedIndividual ,
+                   :Producer .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#JoshuaJackson
+:JoshuaJackson rdf:type owl:NamedIndividual ,
+                        :MainActor .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#MichaelGiacchino
+:MichaelGiacchino rdf:type owl:NamedIndividual ,
+                           :Composer ;
+                  :composed :IntroSeason1 .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#RobertoOrci
+:RobertoOrci rdf:type owl:NamedIndividual ,
+                      :EpisodeWritter .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#SienceFiction
+:SienceFiction rdf:type owl:NamedIndividual ,
+                        :Genre .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#Toronto
+:Toronto rdf:type owl:NamedIndividual ,
+                  :ProductionLocation .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#episode1
+:episode1 rdf:type owl:NamedIndividual ,
+                   :Episode ;
+          :belongsToSeason :season1 ;
+          :episodeNumber 1 .
+
+
+###  http://www.semanticweb.org/jnada/ontologies/2022/3/FringeTVSeries#season1
+:season1 rdf:type owl:NamedIndividual ,
+                  :Season .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Book
+                :Comic
+                :Film
+                :Game
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
